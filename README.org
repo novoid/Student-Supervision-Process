@@ -1,4 +1,4 @@
-# Time-stamp: <2012-03-18 21:32:43 vk>
+# Time-stamp: <2012-03-18 21:57:25 vk>
 # -*- coding: utf-8 -*-
 
 * What the heck is this for?
@@ -13,10 +13,9 @@ need a *common* procedure. I simply can not remember/maintain the
 preferred data flow mechanism of each and every student. So students
 have to adopt to my method.
 
-And this is how.
+And this is document describes the method.
 
-PS: Do not hesitate and contact me if you have better ideas on this
-subject!
+PS: Do not hesitate and contact me if you have suggestions!
 
 * Process Components
 
@@ -26,7 +25,7 @@ The supervision process consists of multiple parts:
 - Individual Appointments: regular meetings with the students
 - Regular Submissions of PDF files: how to supervise content
 - Weekly LaTeX-Q&A: there are always things you can learn about LaTeX
-- LaTeX Code Suggestions: direct feedback on the LaTeX source
+- LaTeX Code: basic rules and direct feedback
 
 ** Following the Rules
 
@@ -72,7 +71,7 @@ If you do not have a Dropbox account yet, please email me your email
 address you want to use for your Dropbox account. I send you a Dropbox
 invitation. This way I get +250MB of space for every invitation that
 ends in an active account. So please do not create accounts by
-yourself without invitation.
+yourself without invitation of anybody.
 
 Install the Dropbox client suitable for your operating system. You do
 not need to use the client. For daily work the client integration is
@@ -80,7 +79,8 @@ not need to use the client. For daily work the client integration is
 benefit of Dropbox.
 
 Create a Dropbox folder for your thesis using any name you wish. I
-rename it to «LASTNAME_THESISTYPE» on my side anyway.
+rename it to «LASTNAME_THESISTYPE» on my side (only)
+anyway. («Thesistype» is either «Bakk» or «DA».)
 
 Then go to the web interface, enter the folder you created for the
 thesis, and locate «Share this folder» in the icon bar left of the
@@ -128,10 +128,8 @@ If you finish a certain part of your document:
 1. generate the PDF file
 2. put it in the shared Dropbox folder
 3. rename it to «YYYY-MM-DD_TYPE_LASTNAME_-_optional_things.PDF»
-   - examples:
-     - 2012-03-18_DA_Smith.pdf (minimal)
-     - 2012-03-19_Bakk_Mueller_-_chap_2-4_ready_for_persual.pdf
-       (with comments)
+   - minimal example: 2012-03-18_DA_Smith.pdf
+   - example with comment: 2012-03-19_Bakk_Mueller_-_chap_2-4_ready_for_persual.pdf
 4. send me an email, describing the parts I should check
 
 After I checked the content of your document, you will may annotations
@@ -140,18 +138,20 @@ appointment.
 
 I might as well add comments in your LaTeX code as well.
 
-** Weekly LaTeX-Questions and Answers
+** Weekly LaTeX Questions and Answers
 
 We will schedule a weekly hour for LaTeX-specific questions and best
-practices. It is *not mandatory* but highly recommended.
+practices. It is *not mandatory* but highly recommended. Especially at
+an early stage of your thesis!
 
-I assume that you have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]. At this LaTeX-Q&A I will
-show examples of LaTeX source code and suggest things that spare you
-lots of time (and nerves).
+I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]. At this
+LaTeX-Q&A I will show examples of LaTeX source code and suggest things
+that spare you lots of time (and nerves).
 
-Please be assured: although I stick to current LaTeX code issues, this
-event is *not* intended to offend single persons! It demonstrates
-optimizations and encourages learning!
+Please be assured: although I stick to current LaTeX code issues of my
+students, this event is *not* intended to offend the work of single
+persons! It demonstrates optimizations and encourages learning for
+everybody.
 
 I will keep individual LaTeX code optimizations to a minimum and
 explain things *only* at this LaTeX-Q&A meetings! You will see: your
@@ -161,22 +161,38 @@ couple of years ago.
 Occasionally, this LaTeX meetings may be canceled. In this case, I
 will send an email preferably at least two days in advance.
 
-** LaTeX Code Suggestions
+** LaTeX Code
+
+You *have* to use the LaTeX typesetting system to write your
+thesis. For millions of reasons there is no arguing for doing it in
+other systems. Sorry for that.
 
 I will keep individual LaTeX code optimizations to a minimum and
-explain things *only* at the LaTeX-Q&A meetings!
+explain LaTeX-related things *only* at the LaTeX-Q&A meetings!
 
-- Use the LaTeX thesis [[http://latex.tugraz.at/vorlagen/allgemein#laengeres_dokument_wie_diplomarbeit_dissertation_buch][template of LaTeX@TUG]]
-  - you can use your own thesis template as well
-- You have to use the [[http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes/][todonotes]] packet
+I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]].
+
+- Use the LaTeX [[http://latex.tugraz.at/vorlagen/allgemein#laengeres_dokument_wie_diplomarbeit_dissertation_buch][thesis template of LaTeX@TUG]]
+  - you can use your own thesis template as long as you know what you
+    are doing (I will check!)
+- In any case: please read the content of the example chapters of the
+  LaTeX@TUG template!
+- Use the [[http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes/][todonotes]] packet
+  - add the «listoftodos» command in your document to get an overview
+    of open issues
+  - Annotations and suggestions will be done using todonotes snippets
+    within your tex-files
+  - use todonotes by annotating open issues by yourself
 - Check in all necessary files for compilation
   - do not forget images and such
-- Maintain a script that generates the PDF file
-  - the thesis template of LaTeX@TUG offers a [[http://en.wikipedia.org/wiki/Makefile][makefile]]
-
-Annotations and suggestions will be done using todonotes snippets
-within your tex-files. You can use todonotes by yourself as well of
-course.
+- Maintain a script that generates the PDF file completely
+  - the thesis template of LaTeX@TUG offers a [[http://en.wikipedia.org/wiki/Makefile][makefile]] for that
+    purpose
+- Make sure your LaTeX-editor ...
+  - uses a decent *spell checker*
+  - produces UTF-8 compatible TeX-files
+  - does not produce line lengths longer than the usual 70-90
+    characters in your TeX-files
 
 * License
 
