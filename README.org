@@ -1,0 +1,184 @@
+# Time-stamp: <2012-03-18 21:32:43 vk>
+# -*- coding: utf-8 -*-
+
+* What the heck is this for?
+
+The author is supervising several student works. Since each of them
+is finalizing their work more or less in parallel, there was a need
+for a structured way of supervision.
+
+No student should suffer from being forgotten nor should get feedback
+too late. Being a supervisor is not the major part of my job and so I
+need a *common* procedure. I simply can not remember/maintain the
+preferred data flow mechanism of each and every student. So students
+have to adopt to my method.
+
+And this is how.
+
+PS: Do not hesitate and contact me if you have better ideas on this
+subject!
+
+* Process Components
+
+The supervision process consists of multiple parts:
+- Following the Rules: how to keep students up to date on the process here
+- Communication Channels and Setup: how to exchange files and information
+- Individual Appointments: regular meetings with the students
+- Regular Submissions of PDF files: how to supervise content
+- Weekly LaTeX-Q&A: there are always things you can learn about LaTeX
+- LaTeX Code Suggestions: direct feedback on the LaTeX source
+
+** Following the Rules
+
+This process is hosted [[https://github.com/novoid/Student-Supervision-Process][as a github project]].
+
+It is *up to you* to follow changes! Not every change will be
+announced via emails to all students.
+
+Either:
+- «follow» the project on github and regularly monitor its changes OR
+- use a general [[https://www.changedetection.com/][notifier-service]]
+
+** Communication Channels and Setup
+
+*** Asynchronous Communication
+
+My *preferred* way of communicating with you is via *email*. I am
+fairly good reachable per email, even on evenings and most weekends.
+
+*** Synchronous Communication
+
+If you want to get in touch with me for instant feedback, call my
+*office phone number*. Either I am in my office and can answer your
+call or (after four? times of ringing) you will be routed to my
+cellphone. If you land in my voice mail system, I am currently
+speaking to someone else or my phone is off (during sleeping hours).
+
+You might as well ask me for my *[[http://en.wikipedia.org/wiki/Jabber][Jabber]] ID*. 
+
+Sorry, I do have strong arguments against usage of Skype. But you
+might as well ask me for my Google+ ID and schedule a *Google hangout*
+there.
+
+*** Submitting PDF files
+
+I am using a tablet computer to read your PDF submission. This way I
+read and annotate the *content* of your thesis.
+
+If you do not have really big issues with [[https://www.dropbox.com/home][Dropbox]], I would like to use
+a shared Dropbox folder to exchange your PDF files and my annotations.
+
+If you do not have a Dropbox account yet, please email me your email
+address you want to use for your Dropbox account. I send you a Dropbox
+invitation. This way I get +250MB of space for every invitation that
+ends in an active account. So please do not create accounts by
+yourself without invitation.
+
+Install the Dropbox client suitable for your operating system. You do
+not need to use the client. For daily work the client integration is
+*way* more user friendly than the web interface. This is the real
+benefit of Dropbox.
+
+Create a Dropbox folder for your thesis using any name you wish. I
+rename it to «LASTNAME_THESISTYPE» on my side anyway.
+
+Then go to the web interface, enter the folder you created for the
+thesis, and locate «Share this folder» in the icon bar left of the
+search field. Send an invitation to this folder to «dropbox» at
+«Karl-Voit.at».
+
+*** Submitting LaTeX source code
+
+You are going to set up a [[http://en.wikipedia.org/wiki/Subversion][Subversion]] (SVN) repository especially for your
+LaTeX document. Even if you already have a SVN repository for source
+code or such, please do create another one solely for your thesis
+document as well.
+
+For this purpose, [[http://www.TUGraz.at][Graz University of Technology]] offers a fully
+integrated SVN project management on its [[http://online.tugraz.at][TUGRAZonline]]. Go to your
+«Visitenkarte» and look out for «Subversion Projekte» (rightmost
+column). Add me as «Member - RW».
+
+Do *not* wait for some final chapter or so to check in! *Check in
+often!* Use it as a network backup in case your computer fails or in
+case you delete large portions of text by mistake. Never think that
+this will not be the case. We are all humans so we all make
+mistakes. Even me :-)
+
+** Individual Appointments
+
+Each student gets a weekly 30 minute slot or a bi-weekly 60 minute
+slot. If you think I need to do a small internet research by myself
+for a question you have got, email me your question(s) upfront.
+
+Agenda:
+- What happened since the last appointment?
+- What were the problems?
+- Probably: comments about the last PDF submission
+- Probably: comments about the LaTeX source
+- Next steps and deliverables until next appointment
+
+If the appointment should be canceled, write me an email at least one
+day in advance. Short term cancels only via synchronous communication
+channels such as phone.
+
+** Regular Submissions of PDF Files
+
+If you finish a certain part of your document:
+1. generate the PDF file
+2. put it in the shared Dropbox folder
+3. rename it to «YYYY-MM-DD_TYPE_LASTNAME_-_optional_things.PDF»
+   - examples:
+     - 2012-03-18_DA_Smith.pdf (minimal)
+     - 2012-03-19_Bakk_Mueller_-_chap_2-4_ready_for_persual.pdf
+       (with comments)
+4. send me an email, describing the parts I should check
+
+After I checked the content of your document, you will may annotations
+in the PDF file which will be discussed at the next individual
+appointment.
+
+I might as well add comments in your LaTeX code as well.
+
+** Weekly LaTeX-Questions and Answers
+
+We will schedule a weekly hour for LaTeX-specific questions and best
+practices. It is *not mandatory* but highly recommended.
+
+I assume that you have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]. At this LaTeX-Q&A I will
+show examples of LaTeX source code and suggest things that spare you
+lots of time (and nerves).
+
+Please be assured: although I stick to current LaTeX code issues, this
+event is *not* intended to offend single persons! It demonstrates
+optimizations and encourages learning!
+
+I will keep individual LaTeX code optimizations to a minimum and
+explain things *only* at this LaTeX-Q&A meetings! You will see: your
+colleagues make the same mistakes as you do. And as I have done a
+couple of years ago.
+
+Occasionally, this LaTeX meetings may be canceled. In this case, I
+will send an email preferably at least two days in advance.
+
+** LaTeX Code Suggestions
+
+I will keep individual LaTeX code optimizations to a minimum and
+explain things *only* at the LaTeX-Q&A meetings!
+
+- Use the LaTeX thesis [[http://latex.tugraz.at/vorlagen/allgemein#laengeres_dokument_wie_diplomarbeit_dissertation_buch][template of LaTeX@TUG]]
+  - you can use your own thesis template as well
+- You have to use the [[http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes/][todonotes]] packet
+- Check in all necessary files for compilation
+  - do not forget images and such
+- Maintain a script that generates the PDF file
+  - the thesis template of LaTeX@TUG offers a [[http://en.wikipedia.org/wiki/Makefile][makefile]]
+
+Annotations and suggestions will be done using todonotes snippets
+within your tex-files. You can use todonotes by yourself as well of
+course.
+
+* License
+
+[[https://github.com/novoid/Student-Supervision-Process][Student Supervision Process]] by Karl Voit is licensed under a 
+[[http://creativecommons.org/licenses/by-nc-sa/3.0/][Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License]]
