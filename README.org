@@ -1,4 +1,4 @@
-# Time-stamp: <2012-03-18 22:11:15 vk>
+# Time-stamp: <2012-03-22 11:27:49 vk>
 # -*- coding: utf-8 -*-
 
 * What the heck is this for?
@@ -181,6 +181,8 @@ I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]
 - Use the LaTeX [[http://latex.tugraz.at/vorlagen/allgemein#laengeres_dokument_wie_diplomarbeit_dissertation_buch][thesis template of LaTeX@TUG]]
   - you can use your own thesis template as long as you know what you
     are doing (I will check!)
+  - especially as LaTeX beginner: *never* write your own template or
+    preamble. Trust me. [[http://www.urbandictionary.com/define.php?term%3Dbtdt][BTDT]] :-)
 - In any case: please read the content of the example chapters of [[http://latex.tugraz.at/vorlagen/allgemein#laengeres_dokument_wie_diplomarbeit_dissertation_buch][the
   LaTeX@TUG template]]!
 - Use the [[http://www.ctan.org/tex-archive/macros/latex/contrib/todonotes/][todonotes]] packet
@@ -200,8 +202,8 @@ I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]
   - produces UTF-8 compatible TeX-files
   - does not produce line lengths longer than the usual 70-90
     characters in your TeX-files
-- Do not check in the PDF output files of your thesis unless we agree
-  on an exception
+- Do not check in the PDF output files into the Subversion repository
+  of your thesis unless we agree on an exception
   - you can [[http://sdesmedt.wordpress.com/2006/12/10/how-to-make-subversion-ignore-files-and-folders/][ignore files for SVN]] and thus keep them only for your own
 
 * License
