@@ -1,4 +1,4 @@
-# Time-stamp: <2012-03-22 12:15:19 vk>
+# Time-stamp: <2012-04-03 15:47:52 vk>
 # -*- coding: utf-8 -*-
 
 * What the heck is this for?
@@ -31,12 +31,12 @@ The supervision process consists of multiple parts:
 
 This process is hosted [[https://github.com/novoid/Student-Supervision-Process][as a github project]].
 
-Either:
-- «follow» the project on github and regularly monitor its changes
-- OR use a general [[https://www.changedetection.com/][notifier-service]]
+You can «follow» the project on github and regularly monitor its
+changes which is recommended but not mandatory. General
+[[https://www.changedetection.com/][notifier-services]] are being blocked by github and can not be used for
+following the [[https://github.com/novoid/Student-Supervision-Process/commits/master/][changes here]].
 
-It is *up to you* to follow changes! Not [[https://github.com/novoid/Student-Supervision-Process/commits/master/][every change]] will be
-announced via email to all students.
+Changes will be announced via email to all of my students.
 
 ** Communication Channels and Setup
 
