@@ -1,4 +1,4 @@
-# Time-stamp: <2012-04-03 15:47:52 vk>
+# Time-stamp: <2017-08-09 23:54:50 vk>
 # -*- coding: utf-8 -*-
 
 * What the heck is this for?
@@ -53,7 +53,7 @@ call or (after four? times of ringing) you will be routed to my
 cellphone. If you land in my voice mail system, I am currently
 speaking to someone else or my phone is off (during sleeping hours).
 
-You might as well ask me for my *[[http://en.wikipedia.org/wiki/Jabber][Jabber]] ID*. 
+You might as well ask me for my *[[http://en.wikipedia.org/wiki/Jabber][Jabber]] ID*.
 
 Sorry, I do have strong arguments against usage of Skype. But you
 might as well ask me for my Google+ ID and schedule a *Google hangout*
@@ -64,49 +64,37 @@ there.
 I am using a tablet computer to read your PDF submission. This way I
 read and annotate the *content* of your thesis.
 
-If you do not have really big issues with [[https://www.dropbox.com/home][Dropbox]], I would like to use
-a shared Dropbox folder to exchange your PDF files and my annotations.
+Please use [[https://syncthing.net/][Syncthing]] instead of cloud-based services like Dropbox. It
+maintains our level of privacy without exposing data to the public
+cloud.
 
-Note: In case you got a (privacy?) issue with Dropbox, please contact
-me and provide a suggestion for an alternative method.
+Syncthing is available for all major operating systems except Apple
+iOS because Apple is prohibiting tools like Syncthing as they
+prohibited tools like external keyboards for many years.
 
-If you do not have a Dropbox account yet, please email me your email
-address you want to use for your Dropbox account. I send you a Dropbox
-invitation. This way I get +250MB of space for every invitation that
-ends in an active account. So please do not create accounts by
-yourself without invitation of anybody.
+Create a Syncthing folder for your thesis using any name you wish. I
+rename it to «LASTNAME_THESISTYPE» on my side (only) anyway.
+(«Thesistype» is either «Bakk» or «DA».)
 
-Install the Dropbox client suitable for your operating system. You do
-not need to use the client. For daily work the client integration is
-*way* more user friendly than the web interface. This is the real
-benefit of Dropbox.
-
-Create a Dropbox folder for your thesis using any name you wish. I
-rename it to «LASTNAME_THESISTYPE» on my side (only)
-anyway. («Thesistype» is either «Bakk» or «DA».)
-
-Then go to the web interface, enter the folder you created for the
-thesis, and locate «Share this folder» in the icon bar left of the
-search field. Send an invitation to this folder to «dropbox» at
-«Karl-Voit.at».
+After you have created your Synthing folder, please do send me your
+device ID ([[http://127.0.0.1:8384/][web interface]] > Actions > Show ID) and the ID of your
+shared folder (expand the folder in the web interface).
 
 *** Submitting LaTeX source code
 
-You are going to set up a [[http://en.wikipedia.org/wiki/Subversion][Subversion]] (SVN) repository especially for your
-LaTeX document. Even if you already have a SVN repository for source
-code or such, please do create another one solely for your thesis
-document as well.
+You are going to set up a [[http://en.wikipedia.org/wiki/Git][Git]] repository especially for your LaTeX
+document. Even if you already have a Git repository for source code or
+such, please do create another one solely for your thesis document as
+well.
 
-For this purpose, [[http://www.TUGraz.at][Graz University of Technology]] offers a fully
-integrated SVN project management on its [[http://online.tugraz.at][TUGRAZonline]]. Go to your
-«Visitenkarte» and look out for «Subversion Projekte» (rightmost
-column). Add me as «Member - RW».
+Please contact me for getting information where to push your local Git
+changes to.
 
 Do *not* wait for some final chapter or so to check in! *Check in
-often!* Use it as a network backup in case your computer fails or in
+often!* Use it as an off-site backup in case your computer fails or in
 case you delete large portions of text by mistake. Never think that
-this will not be the case. We are all humans so we all make
-mistakes. Even me :-)
+this will not be the case. We are all humans so we all make mistakes.
+Even me :-)
 
 ** Individual Appointments
 
@@ -131,13 +119,13 @@ This is about the *content* of your thesis.
 
 If you finish a certain part of your document:
 1. Generate the PDF file
-2. Put it in the shared Dropbox folder
-3. Rename it to «YYYY-MM-DD_TYPE_LASTNAME_-_optional_things.PDF»
+2. Put it in the shared Syncthing folder
+3. Rename it to =YYYY-MM-DD_TYPE_LASTNAME_-_optional_things.PDF=
 4. Send me an email, describing the parts I should check
 
 File name convention examples:
-- minimal example: 2012-03-18_DA_Smith.pdf
-- example with comment: 2012-03-19_Bakk_Mueller_-_chap_2-4_ready_for_persual.pdf
+- minimal example: =2012-03-18_DA_Smith.pdf=
+- example with comment: =2012-03-19_Bakk_Mueller_-_chap_2-4_ready_for_persual.pdf=
 
 After I checked the content of your document, you will may annotations
 in the PDF file which will be discussed at the next individual
@@ -194,7 +182,7 @@ I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]
   - Annotations and suggestions will be done using todonotes snippets
     within your tex-files
   - use todonotes by annotating open issues by yourself
-- Check in all necessary files for compilation into the SVN repository
+- Check in all necessary files for compilation into the Git repository
   - do not forget images and such
   - do use *meaningful submit messages* in the commit line
 - Maintain a script that generates the PDF file completely
@@ -205,11 +193,20 @@ I assume that you already have [[http://LaTeX.TUGraz.at][basic LaTeX knowledge]]
   - produces UTF-8 compatible TeX-files
   - does not produce line lengths longer than the usual 70-90
     characters in your TeX-files
-- Do not check in the PDF output files into the Subversion repository
+- Do not check in the PDF output files into the Git repository
   of your thesis unless we agree on an exception
-  - you can [[http://sdesmedt.wordpress.com/2006/12/10/how-to-make-subversion-ignore-files-and-folders/][ignore files for SVN]] and thus keep them only for your own
+  - you can [[https://git-scm.com/docs/gitignore][ignore files for Git]] and thus keep them only for your own
+
+There is an even longer [[https://github.com/dspinellis/latex-advice][page with excellent tips on how to write LaTeX
+documents]]. I recommend you to read it as well. Some details do differ
+from your situation here because you are using a different LaTeX
+template (KOMA script) where following things are handled differently:
+- no natbib
+- no doublespace (it's not even maintained any more)
+- no geometry
+- no pslatex
 
 * License
 
-[[https://github.com/novoid/Student-Supervision-Process][Student Supervision Process]] by Karl Voit is licensed under a 
+[[https://github.com/novoid/Student-Supervision-Process][Student Supervision Process]] by Karl Voit is licensed under a
 [[http://creativecommons.org/licenses/by-nc-sa/3.0/][Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License]]
